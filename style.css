@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url("./wall.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.main {
+  background: #000;
+  width: 400px;
+  height: 175px;
+  margin: 20% auto;
+  position: relative;
+}
+.badge {
+  background: #22c;
+  color: white;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 100px;
+  position: absolute;
+  top: -7%;
+  left: 40%;
+}
+.clock {
+  background: #0a9cd6;
+  font-size: 55px;
+  height: 100%;
+  text-align: center;
+}
+span {
+  background: #0a9cd6;
+  color: black;
+}
+@media screen and (max-width: 400px) {
+  .main {
+    width: 200px !important;
+    height: 100px;
+  }
+  .badge {
+    width: 100px !important;
+    left: 25%;
+  }
+  .clock {
+    font-size: 25px !important;
+  }
+}
